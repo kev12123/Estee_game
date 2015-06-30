@@ -12,11 +12,10 @@
 
 body {
 	background-color: #040a2b;
-	margin: 100px 0px 0px 0px;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
-	height: 1779;
-	width: 810;
+	width: 1779px;
+	height: 810px;
 }
 
 body article#game {
