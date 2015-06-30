@@ -1,0 +1,125 @@
+/* 
+    Document   : style
+    Created on : 07-Mar-2013, 15:08:57
+    Author     : Ray Hammond
+    Description:
+        CSS styles for a matching game written using HTML5.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+	background-color: #0B264D;
+	margin: 100px 0px 0px 0px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	height: 1779;
+	width: 810;
+}
+
+body article#game {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+header div {
+	height: 40px;
+	font-size: 18px;
+	color: #a67900;
+	padding-top: 15px;
+}
+#status {
+  font: 18px/1.5 Helvetica, Arial, sans-serif;
+  color: #fff;
+  float: left;
+}
+ 
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-top:-550px;
+}
+
+#status {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+
+
+#board {
+	padding-top: 10px;
+    width: 1000px;
+    height: 425px;
+	margin-left:52px;
+
+
+}
+
+
+#header h1{
+	text-align:center;
+	color:#9eafff;
+}
+
+#startGameButton
+{
+	color: #9eafff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: inline-block;
+	width: 100px;
+	border:1px double #9eafff;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+
+}
+
+.tile {
+	float:left;
+	width: 200px;
+	height: 200px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #cfcfcf;
+	cursor: pointer;
+}
+
+.tile img {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.tileColor1 {
+	 background-image: url("../images/logoa.png");
+     background-repeat: no-repeat;
+}
+
+.tileColor2 {
+	 background-image: url("../images/logoa.png");
+     background-repeat: no-repeat;
+}
+
+.tileColor3 {
+	 background-image: url("../images/logoa.png");
+     background-repeat: no-repeat;
+}
+
+.tileColor4 {
+	 background-image: url("../images/logoa.png");
+     background-repeat: no-repeat;
+}
+
+.tileColor5 {
+	 background-image: url("../images/logoa.png");
+     background-repeat: no-repeat;
+}
