@@ -21,7 +21,7 @@ and open the template in the editor.
     float:left;
     margin-top: -530px;
 	color: #9eafff;
-	display: inline-block;
+	position: absolute;
 	width: 130px;
 	border:1px double #9eafff;
 	text-decoration: none;
@@ -31,20 +31,28 @@ and open the template in the editor.
 	}
 
 	#backGimage{
+position: absolute;	}
 
-		position: absolute;
-	}
+#igm{
+height:745px;
+
+}
+
 #Game{
-	float:right;
+
+	position: absolute;
+	left: 560px;
+
 }
 </style>
 
 
 </head>
-
+<div id = "header">
 <h1>Match the Products to Win a Free Sample</h1>
+</div> 
 <div id = "backGimage">
-	<img src = "littleBlackPrimer.jpg" >
+	<img  id = "igm"src = "kendall.png" >
 </div>
 
 <div id ="Game">
@@ -55,10 +63,10 @@ and open the template in the editor.
 
 
 		<a href='index.html' id="startGameButton">New Game</a>
-		<div id="status">
+		<!-- <div id="status">
 		</div>
-		<script type="text/javascript">countDown(40,"status");</script>
-</div>
+ <script type="text/javascript">countDown(40,"status");</script>
+</div> -->
 
 </div>
 

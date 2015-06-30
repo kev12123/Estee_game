@@ -7,7 +7,7 @@ var tiles = new Array(),
 	iTimer = 0,
 	iInterval = 100,
 	iPeekTime = 3000;
-	numTiles = 8;
+	numTiles = 10;
 	counterT =0;
 	counter =0;
 
@@ -16,22 +16,22 @@ var tiles = new Array(),
 //var time = 20000;
 //window.setInterval(onPeekStart,time);
 
-function countDown(mins,elem){
-    var element = document.getElementById(elem);
-    element.innerHTML = "0:" + (mins) ;
+// function countDown(mins,elem){
+//     var element = document.getElementById(elem);
+//     element.innerHTML = "0:" + (mins) ;
 
-    if (mins == 0/* or Startbutton.onclick */){
-        window.location.href = "youlose.html";
-       mins = 60;
-      }
+//     if (mins == 0 or Startbutton.onclick ){
+//         window.location.href = "youlose.html";
+//        mins = 60;
+//       }
 
 
       
-mins--;
+// mins--;
 
-   var timer = setTimeout('countDown('+mins+',"'+elem+'")',1000);
+//    var timer = setTimeout('countDown('+mins+',"'+elem+'")',1000);
 
-}
+// }
 
 
 	function getRandomImageForTile() {
@@ -73,7 +73,7 @@ function initState() {
 		is used to ensure each image is only 
 		allocated twice.
 	*/
-	tileAllocation = new Array(0,0,0,0);
+	tileAllocation = new Array(0,0,0,0,0);
 	
 	while(tiles.length > 0) {
 		tiles.pop();
