@@ -76,12 +76,13 @@ a {
 
 #header
 {
-    font-size:10px;
+    font-size:14px;
 	color: white;
 	font-family: AkzidenzGrotesk;
 	font-weight: bold;
 	letter-spacing: .15em;
 	margin-bottom: 20px;
+	padding-right: 100px;
 
 }
 /*#header h1{
