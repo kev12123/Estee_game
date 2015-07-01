@@ -12,10 +12,11 @@
 
 body {
 	background-color: #040a2b;
+	margin: 0px;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 	width: 1779px;
-	height: 810px;
+	height: 780px;
 }
 
 body article#game {
@@ -23,14 +24,14 @@ body article#game {
 	margin: 0 auto;
 }
 
-header div {
-	height: 40px;
-	font-size: 18px;
+/*header div {
+	height: 10px;
+	font-size: 10px;
 	color: #a67900;
 	padding-top: 15px;
 	position: absolute;
 	
-}
+}*/
 #status {
   font: 18px/1.5 Helvetica, Arial, sans-serif;
   color: #fff;
@@ -54,21 +55,29 @@ a {
 
 
 
-#board {
+#board 
+{
 	padding-top: 10px;
-    width: 1110px;
+    width: 1020px;
     height: 425px;
-	margin-left:52px;
-
-
+	display: block;
+	float: left;
 }
 
-
-#header h1{
+#header
+{
+	position: absolute;
+    font-size:8px;
+	left:315px;
+	top:-20px;
+	color: white;
+}
+/*#header h1{
 	text-align:center;
 	margin-left: 200px;
+	left: 315px;
 	color:#9eafff;
-}
+}*/
 
 #startGameButton
 {
@@ -87,18 +96,20 @@ a {
 
 .tile {
 	float:left;
-	width: 200px;
-	height: 200px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	border: 1px solid #cfcfcf;
+	width: 180px;
+	height: 180px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	cursor: pointer;
 }
 
 .tile img {
 	display: block;
 	margin: 0 auto;
-	width: 200px;
+	width: 180px;
+	border: 1px solid #5C5E68;
+
+
 }
 
 .tileColor1 {

@@ -18,59 +18,72 @@ and open the template in the editor.
 	<style> /* change to CSS file */
 
 	#status{
-    float:left;
-    margin-top: -530px;
+   
+    
 	color: #9eafff;
 	position: absolute;
-	width: 130px;
-	border:1px double #9eafff;
+	left :960px;
+	
+    top:-14px;
 	text-decoration: none;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 10px;
 	}
 
-	#backGimage{
-position: absolute;	}
-
-#igm{
-height:100%;
-
+#backGimage
+{
+	float: left;
+	top: 0px;
+	left: 0px;	
 }
 
-#Game{
+#igm
+{
+	height:100%;
+}
 
+#button
+{
+	top:628px;
+	left:1063px;
+}
+
+#Game
+{
+	width: 1108px;
 	position: absolute;
-	left: 560px;
+	top: 112px;
+	left: 687px;
 
 }
 </style>
 
 
 </head>
-<!-- <div id = "header">
-<h1>Match the Products to Win a Free Sample</h1>
-</div>  -->
+
 <div id = "backGimage">
-	<img id="igm" src="kendall.png" >
+	<img  id = "igm"src = "kendall.png" >
 </div>
 
 <div id ="Game">
-	<article id="game">
-
+	<!-- <article id="game"> -->
+<div id = "header">
+<h1>MATCH ALL FIVE PRODUCT TO WIN MAKEUP RIGHT NOW </h1>
+</div> 
 		<section id="board">
 		</section>
 
 
-		<a href='index.html' id="startGameButton">New Game</a>
-		<!-- <div id="status">
+		<a href='index.html' ><img src = "images/playgame.png" id ="button" ></a>
+		<div id="status">
 		</div>
- <script type="text/javascript">countDown(40,"status");</script>
-</div> -->
+ <script type="text/javascript">countDown(30,"status");</script>
+</div> 
 
 </div>
 
-	</article>
+	<!-- </article> -->
 
 
 </body>

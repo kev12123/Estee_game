@@ -13,25 +13,21 @@ var tiles = new Array(),
 
 
 
-//var time = 20000;
-//window.setInterval(onPeekStart,time);
+// var time = 20000;
+// window.setInterval(onPeekStart,time);
 
-// function countDown(mins,elem){
-//     var element = document.getElementById(elem);
-//     element.innerHTML = "0:" + (mins) ;
+ function countDown(mins,elem){
+    var element = document.getElementById(elem);
+    element.innerHTML = (mins) ;
 
-//     if (mins == 0 or Startbutton.onclick ){
-//         window.location.href = "youlose.html";
-//        mins = 60;
-//       }
+    if (mins == 0){
+         window.location.href = "youlose.html";
+        mins = 60;
+       }
+     //mins--;
+    var timer = setTimeout('countDown('+mins+',"'+elem+'")',1000);
 
-
-      
-// mins--;
-
-//    var timer = setTimeout('countDown('+mins+',"'+elem+'")',1000);
-
-// }
+ }
 
 
 	function getRandomImageForTile() {
@@ -62,7 +58,7 @@ function createTile(iCounter) {
 	curTile.setFrontColor("tileColor" + Math.floor((Math.random() * 5) + 1));
 	curTile.setStartAt(500 * Math.floor((Math.random() * 5) + 1));
 	curTile.setFlipMethod(flips[Math.floor((Math.random() * 3) + 1)]);
-	curTile.setBackContentImage("images/" +  (iRandomImage + 1) + "a.png");
+	curTile.setBackContentImage("images/" +  (iRandomImage + 1) + "a.jpg");
 	
 	return curTile;
 }
@@ -180,9 +176,15 @@ if(iFlippedTile === null) {
 			var audio = new Audio('applause.mp3');
             audio.play();
             
-           if (counter == 4){
-		     window.location.href = "youwin.html";
+           if (counter == 5){
+		      
 	          counter =0;
+	          //setTimeout(window.location.href ="youwin.html",5000);
+	          //window.setInterval(window.location.href ="youwin.html");
+	          // setTimeout(window.location.href ="youwin.html",1000);
+	          setTimeout(function () {
+   window.location.href = "youwin.html"; //will redirect to your blog page (an ex: blog.html)
+}, 2000); //wi
 	      }
 		}
 	
