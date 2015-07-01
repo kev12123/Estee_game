@@ -3,8 +3,8 @@
 function tile(id) {
 	
 	this.id = id;
-	this.frontColor = '#131A32';
-	this.backColor = '#131A32';
+	this.frontColor = '#434760';
+	this.backColor = '#434760';
 	this.startAt = 1000;
 	this.flipped = false;
 	this.backContentImage = null;
