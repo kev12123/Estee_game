@@ -10,6 +10,13 @@
     display: block;
 }*/
 
+@font-face {
+    font-family: AkzidenzGrotesk;
+    src: url(../fonts/AkzidenzGrotesk-Bold.otf);
+    font-weight: bold;
+}
+
+
 body {
 	background-color: #040a2b;
 	margin: 0px;
@@ -69,8 +76,11 @@ a {
 	position: absolute;
     font-size:8px;
 	left:315px;
-	top:-20px;
+	top:-40px;
 	color: white;
+	font-family: AkzidenzGrotesk;
+	font-weight: bold;
+
 }
 /*#header h1{
 	text-align:center;
