@@ -12,6 +12,11 @@
 
 @font-face {
     font-family: AkzidenzGrotesk;
+    src: url(../fonts/AkzidenzGrotesk-Regular.otf);
+ 
+}
+@font-face {
+    font-family: AkzidenzGrotesk;
     src: url(../fonts/AkzidenzGrotesk-Bold.otf);
     font-weight: bold;
 }
@@ -20,7 +25,6 @@
 body {
 	background-color: #040a2b;
 	margin: 0px;
-	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 	width: 1779px;
 	height: 780px;
@@ -40,7 +44,6 @@ body article#game {
 	
 }*/
 #status {
-  font: 18px/1.5 Helvetica, Arial, sans-serif;
   color: #fff;
   float: left;
 }
@@ -52,7 +55,7 @@ a {
 }
 
 #status {
-  font-family: Arial;
+  font-family:AkzidenzGrotesk ;
   color: #ffffff;
   font-size: 15px;
   padding: 10px 20px 10px 20px;
