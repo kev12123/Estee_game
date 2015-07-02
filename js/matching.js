@@ -24,7 +24,7 @@ var tiles = new Array(),
          window.location.href = "youlose.html";
         mins = 60;
        }
-     //mins--;
+     mins--;
     var timer = setTimeout('countDown('+mins+',"'+elem+'")',1000);
 
  }
