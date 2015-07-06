@@ -172,19 +172,19 @@ if(iFlippedTile === null) {
 			
 
 		} else {
-	        counter++;
-			var audio = new Audio('applause.mp3');
-            audio.play();
+	        	counter++;
+				var audio = new Audio('109663__grunz__success-low.wav');
+            	setTimeout(function(){audio.play();},500);
             
            if (counter == 5){
 		      
+		      var audioW = new Audio('270404__littlerobotsoundfactory__jingle-achievement-00.wav');
+		      setTimeout(function(){audioW.play();},2000);
+       
 	          counter =0;
-	          //setTimeout(window.location.href ="youwin.html",5000);
-	          //window.setInterval(window.location.href ="youwin.html");
-	          // setTimeout(window.location.href ="youwin.html",1000);
+	         
 	          setTimeout(function () {
-   window.location.href = "youwin.html"; //will redirect to your blog page (an ex: blog.html)
-}, 2000); //wi
+  			  window.location.href = "youwin.html"; },6000); //will redirect to your html page (an ex: blog.html)
 	      }
 		}
 	
@@ -203,7 +203,7 @@ function onPeekComplete() {
 	
 		iTileBeingFlippedId = this.id.substring("tile".length);
 	
-		if(tiles[iTileBeingFlippedId].getFlipped() === false) {  // condition that allows player to fli
+		if(tiles[iTileBeingFlippedId].getFlipped() === false) { 
 			tiles[iTileBeingFlippedId].addFlipCompleteCallback(function() { checkMatch(); });
 			tiles[iTileBeingFlippedId].flip();
 		}
